@@ -104,9 +104,15 @@ if __name__ == '__main__':
 			row = [format(x) for x in row]
 		except UnicodeEncodeError: 
 			print "Unicode bug: ", row 
-			break
+
+		# to avoid DB2 BIGINT insert errors, convert '' to 0
+		for index, value in enumerate(row):
+			if all_col_types[index] in ["BIGINT", "SMALLINT", "INTEGER"]:
+				if value == '':
+					row[index] = 0
 
 		row = tuple(row)
+
 		query = "INSERT INTO ADV_PROFILE VALUES" + str(row)  + ";"
 		try:
 			ibm_db.exec_immediate(conn, query)
@@ -119,17 +125,8 @@ if __name__ == '__main__':
 			
 			print ibm_db.stmt_errormsg()
 
-			# # catch the BIGINT error
-			# bigint_indices = []
-			# for index, value in enumerate(all_col_types):
-			# 	bigint_indices.append(index)
-
-			# print "Catching the bug!" 
-			# for x in bigint_indices:
-			# 	print all_col_types[x]
 		rows_dumped += 1
 
 	print "done."
 	print "Inserted", rows_dumped, "rows."
-	print "Rows with bugs: ", len(rows_with_bug)
-	print "Rows with bugs: ", rows_with_bug
+	print "No of rows with bugs:", len(rows_with_bug)
