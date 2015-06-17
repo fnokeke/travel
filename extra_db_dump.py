@@ -1,13 +1,6 @@
 import xlrd 
-import ibm_db
-import re
 import os
 import unicodedata
-import pprint
-
-#################################################
-#               MAIN
-#################################################
 
 def format(val):
 
@@ -20,31 +13,18 @@ def format(val):
 	if val.find("'") >= 0:
 		val = val.replace("'", '"')
 
-	# change u'' to u
-	# val = re.sub(r"''", '', val)
 	return str(val)
 
 
+#################################################
+#               MAIN
+#################################################
 if __name__ == '__main__':
 
-	# connect to db
-	dsn = ( 
-			'DATABASE=travel;'
-			'HOSTNAME=localhost;'
-			'PORT=50000;'
-			'PROTOCOL=TCPIP;'
-			'UID=db2inst1;'
-			'PWD=123456;'
-			)
-	conn = ibm_db.pconnect(dsn, "", "")
-	print "DB connected."
+	from connect import Connect 
 
-	# set schema 
-	ibm_db.exec_immediate(conn, "set schema = 'PROFILE'")
-
-	# # create index
-	# ibm_db.exec_immediate(conn, 
-	# 	"CREATE INDEX I_EMPLOYEE_1 ON employee(traveler_profile);")
+	# automatically sets default schema
+	handler = Connect() 
 
 	# dump data from excel sheet
 	print "Dumping data from excel into DB..."
@@ -54,7 +34,6 @@ if __name__ == '__main__':
 
 	col_names = sheet.row_values(0)
 	col_names = [str(x) for x in col_names]
-
 	col_types = [type(x) for x in sheet.row_values(1)]
 
 	# col length is the length of the longest entry in the col 
@@ -74,6 +53,7 @@ if __name__ == '__main__':
 	# create huge table (97 columns)
 	all_col_types = []
 	query = []
+
 	for i in range(len(col_names)):
 		if col_types[i] == float:
 			if col_len[i] >= 10: 
@@ -90,9 +70,10 @@ if __name__ == '__main__':
 			all_col_types.append("VARCHAR")
 
 	tmp = ','.join(query[:-1])
-	query = "CREATE TABLE PROFILE.ADV_PROFILE (" + tmp + "," + query[-1] + ");"
-	ibm_db.exec_immediate(conn, "DROP TABLE PROFILE.ADV_PROFILE")
- 	ibm_db.exec_immediate(conn, query) 
+
+	handler.run_query("DROP TABLE PROFILE.BIGTABLE_ADV_PROFILE")
+	query = "CREATE TABLE PROFILE.BIGTABLE_ADV_PROFILE (" + tmp + "," + query[-1] + ");"
+	handler.run_query(query)
 
 	# dump from excel into table
 	rows_dumped = 0
@@ -113,17 +94,12 @@ if __name__ == '__main__':
 
 		row = tuple(row)
 
-		query = "INSERT INTO ADV_PROFILE VALUES" + str(row)  + ";"
+		query = "INSERT INTO BIGTABLE_ADV_PROFILE VALUES" + str(row)  + ";"
 		try:
-			ibm_db.exec_immediate(conn, query)
+			handler.run_query(query)
 		except:
-			# print "Query failed: "
-			# pprint.pprint(query)
-
 			rows_with_bug.append(i)
-			# print "Row No:", i 
-			
-			print ibm_db.stmt_errormsg()
+			print handler.get_query_error()
 
 		rows_dumped += 1
 

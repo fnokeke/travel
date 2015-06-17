@@ -1,11 +1,8 @@
+# db_dump.py
+
 import xlrd 
-import ibm_db
 import os
 import unicodedata
-
-#################################################
-#               MAIN
-#################################################
 
 def format(val):
 	if type(x) == unicode: 
@@ -19,48 +16,39 @@ def format(val):
 
 	return val
 
+
+#################################################
+#               MAIN
+#################################################
 if __name__ == '__main__':
 
-	# connect to db
-	dsn = ( 
-			'DATABASE=travel;'
-			'HOSTNAME=localhost;'
-			'PORT=50000;'
-			'PROTOCOL=TCPIP;'
-			'UID=db2inst1;'
-			'PWD=123456;'
-	)
-	conn = ibm_db.pconnect(dsn, "", "")
-	print "DB connected."
+	from connect import Connect 
 
-	# set schema 
-	ibm_db.exec_immediate(conn, "set schema = 'PROFILE'")
+	# automatically sets default schema
+	handler = Connect() 
 
 	# drop table
-	stmt = ibm_db.exec_immediate(conn, 
-			"select tabname from syscat.tables where tabschema='PROFILE' and tabname='employee'")
-	# if stmt:
-	ibm_db.exec_immediate(conn, "DROP TABLE PROFILE.EMPLOYEE")
-
+	handler.run_query("DROP TABLE PROFILE.BIGTABLE_EMPLOYEE")
+			
 	# create table
-	ibm_db.exec_immediate(conn, 
-	"""
-		CREATE TABLE employee (firstname VARCHAR(30) NOT NULL, 
-		lastname VARCHAR(30) NOT NULL, 
-		email VARCHAR(50) NOT NULL, 
-		id	BIGINT, 
-		agency_code CHAR(5),		
-		traveler_profile BIGINT,
-		loyalty_type SMALLINT, 
-		provider_code	CHAR(5),
-		loyalty_no VARCHAR(50)
-		);
-	"""
+	handler.run_query(
+		"""
+			CREATE TABLE BIGTABLE_EMPLOYEE (firstname VARCHAR(30) NOT NULL, 
+			lastname VARCHAR(30) NOT NULL, 
+			email VARCHAR(50) NOT NULL, 
+			id	BIGINT, 
+			agency_code CHAR(5),		
+			traveler_profile BIGINT,
+			loyalty_type SMALLINT, 
+			provider_code	CHAR(5),
+			loyalty_no VARCHAR(50)
+			);
+		"""
 	)
 
 	# create index
-	ibm_db.exec_immediate(conn, 
- 		"CREATE INDEX I_EMPLOYEE_1 ON employee(traveler_profile);")
+	handler.run_query(
+ 		"CREATE INDEX I_EMPLOYEE_1 ON BIGTABLE_EMPLOYEE(traveler_profile);")
 	
 	# dump data from excel sheet
 	print "Dumping data from excel into DB..."
@@ -78,13 +66,13 @@ if __name__ == '__main__':
 			print "Unicode bug: ", row 
 
 		row = tuple(row)
-		query = "INSERT INTO EMPLOYEE VALUES" + str(row)  + ";"
+		query = "INSERT INTO BIGTABLE_EMPLOYEE VALUES" + str(row)  + ";"
 		try:
-			ibm_db.exec_immediate(conn, query)
+			handler.run_query(query)
 		except:
 			print row
 			print "Query failed: " + query
-			print ibm_db.stmt_errormsg()
+			print handler.get_query_error()
 		rows_dumped += 1
 
 	print "done."
