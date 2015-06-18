@@ -9,21 +9,37 @@ if __name__ == '__main__':
 	# automatically sets default schema
 	handler = Connect() 
 
-	# create smaller tables
+	#### employee table ###
 	handler.run_query("""
 	 DROP TABLE PROFILE.EMPLOYEE""")
 
-	handler.run_query("""
-			CREATE TABLE PROFILE.EMPLOYEE (
-				firstname VARCHAR(30) NOT NULL, 
-				lastname VARCHAR(30) NOT NULL, 
-				email VARCHAR(50) NOT NULL PRIMARY KEY
-			)""")
+	# create
+	handler.run_query(
+	"""
+		CREATE TABLE PROFILE.EMPLOYEE AS (
+			SELECT firstname, lastname, email
+			FROM PROFILE.BIGTABLE_EMPLOYEE
+		) WITH NO DATA;
+	"""
+	)
+
+	# add primary key
+	handler.run_query(
+	"""
+		ALTER TABLE PROFILE.EMPLOYEE ADD PRIMARY KEY (email);
+	"""
+	)
 	
-	handler.run_query("""
+
+	# insert
+	handler.run_query(
+	"""
 		INSERT INTO PROFILE.EMPLOYEE
 			SELECT DISTINCT firstname, lastname, email
-			FROM PROFILE.BIGTABLE_EMPLOYEE
-	 """)
+			FROM PROFILE.BIGTABLE_EMPLOYEE;
+	"""
+	)
+
+	# membership table
 
 	print "small tables created."
