@@ -29,14 +29,14 @@ class Connect:
 		stmt = ibm_db.exec_immediate(self.conn, query) 
 
 		# don't fetch result otherwise error raised
-		no_need_for_result = ["DROP", "CREATE", "INSERT"] 
+		no_need_for_result = ["DROP", "CREATE", "INSERT", "ALTER"] 
 		tmp_query = query.upper()
 
 		no_need = False
 		for x in no_need_for_result:
 			if x in tmp_query:
 				no_need = True
-				break
+				break 
 
 		if no_need: 
 			return []
@@ -68,6 +68,10 @@ class Connect:
 		return result != []
 
 
+	# 
+	# @param: new_table, cols, old_table, primary-key
+	# @result: list of dictionary where each dictionary is a row
+	# 
 	def create_table(self, new_table, cols, old_table, pk=''):
 		
 		new_table = new_table.upper()
@@ -76,7 +80,6 @@ class Connect:
 		# drop if exists
 		if self.table_exists(new_table):
 			query = "DROP TABLE %s" % new_table
-			print query
 			self.run_query(query)
 
 		# create
