@@ -66,39 +66,3 @@ class Connect:
 		where tabschema='%s' and tabname='%s'""" % (self.schema, table_name)
 		result = self.run_query(query)
 		return result != []
-
-
-	# 
-	# @param: new_table, cols, old_table, primary-key
-	# @result: list of dictionary where each dictionary is a row
-	# 
-	def create_table(self, new_table, cols, old_table, pk=''):
-		
-		new_table = new_table.upper()
-		old_table = old_table.upper()
-
-		# drop if exists
-		if self.table_exists(new_table):
-			query = "DROP TABLE %s" % new_table
-			self.run_query(query)
-
-		# create
-		query = """
-			CREATE TABLE PROFILE.%s AS (
-				SELECT %s 
-				FROM PROFILE.%s
-			) WITH NO DATA;""" % (new_table, cols, old_table)
-		self.run_query(query)
-
-		# add primary key
-		if pk != '':
-			query = """ALTER TABLE PROFILE.%s ADD PRIMARY KEY (%s)""" % (new_table, pk)
-			self.run_query(query)
-
-		# insert data
-		query = """
-			INSERT INTO PROFILE.%s
-				SELECT DISTINCT %s
-				FROM PROFILE.%s""" % (new_table, cols, old_table)
-		self.run_query(query)
-		print "Table '%s' successfully created." % (new_table)
