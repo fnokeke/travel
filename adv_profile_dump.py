@@ -43,7 +43,7 @@ if __name__ == '__main__':
 		if type(col[i]) != float:
 			col = [str(x) for x in col]
 			col_max_len = max( [len(x) for x in col] )
-			# avoid max length of siz 0
+			# avoid max length of size 0
 			if col_max_len == 0:
 				col_max_len = 1
 			col_len.append(col_max_len)
@@ -71,8 +71,10 @@ if __name__ == '__main__':
 
 	tmp = ','.join(query[:-1])
 
-	handler.run_query("DROP TABLE PROFILE.BIGTABLE_ADV_PROFILE")
-	query = "CREATE TABLE PROFILE.BIGTABLE_ADV_PROFILE (" + tmp + "," + query[-1] + ");"
+	if handler.table_exists("BIGTABLE_EMPLOYEE_DETAIL"):
+		handler.run_query("DROP TABLE PROFILE.BIGTABLE_EMPLOYEE_DETAIL")
+
+	query = "CREATE TABLE PROFILE.BIGTABLE_EMPLOYEE_DETAIL (" + tmp + "," + query[-1] + ");"
 	handler.run_query(query)
 
 	# dump from excel into table
