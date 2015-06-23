@@ -96,7 +96,7 @@ if __name__ == '__main__':
 
 		row = tuple(row)
 
-		query = "INSERT INTO BIGTABLE_ADV_PROFILE VALUES" + str(row)  + ";"
+		query = "INSERT INTO BIGTABLE_EMPLOYEE_DETAIL VALUES" + str(row)  + ";"
 		try:
 			handler.run_query(query)
 		except:
