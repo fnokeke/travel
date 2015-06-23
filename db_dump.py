@@ -8,6 +8,7 @@ def format(val):
 	if type(x) == unicode: 
 		val = unicodedata.normalize('NFKD', val).encode('ascii','ignore')
 		val = val.strip('\\x')
+		# O'Brian ==> O''Brian (for SQL insert)
 		if val.find("'") >= 0:
 			val = val.replace("'", '"')
 
@@ -33,15 +34,16 @@ if __name__ == '__main__':
 	# create table
 	handler.run_query(
 		"""
-			CREATE TABLE BIGTABLE_EMPLOYEE (firstname VARCHAR(30) NOT NULL, 
-			lastname VARCHAR(30) NOT NULL, 
-			email VARCHAR(50) NOT NULL, 
-			id	BIGINT, 
-			agency_code CHAR(5),		
-			traveler_profile BIGINT,
-			loyalty_type SMALLINT, 
-			provider_code	CHAR(5),
-			loyalty_no VARCHAR(50)
+			CREATE TABLE BIGTABLE_EMPLOYEE (
+				firstname VARCHAR(30), 
+				lastname VARCHAR(30), 
+				email VARCHAR(50),
+				id	BIGINT, 
+				agency_code CHAR(5),	
+				traveler_profile BIGINT,
+				loyalty_type SMALLINT, 
+				provider_code	CHAR(5),
+				loyalty_no VARCHAR(50)
 			);
 		"""
 	)
