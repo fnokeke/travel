@@ -1,0 +1,57 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class ConnectionExample {
+
+	public static void main(String[] args) {
+		String jdbcClassName = "com.ibm.db2.jcc.DB2Driver";
+		String url = "jdbc:db2://localhost:50000/travel";
+		String user = "db2inst1";
+		String password = "123456";
+		
+		PreparedStatement pstmt = null;
+		ResultSet rset = null;
+		boolean found = false;
+
+		Connection connection = null;
+		try {
+			// Load class into memory
+			Class.forName(jdbcClassName);
+			// Establish connection
+			connection = DriverManager.getConnection(url, user, password);
+
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			if (connection != null) {
+				System.out.println("Connected successfully.");
+				pstmt = connection.prepareStatement("Select * from bo");
+				rset = pstmt.executeQuery();
+				if (rset != null) {
+
+					while (rset.next()) {
+						found = true;
+						System.out.println("Class Code: "
+								+ rset.getString("clcode"));
+						System.out.println("Name: " + rset.getString("name"));
+					}
+				}
+				if (found == false) {
+					System.out.println("No Information Found");
+				}
+				try {
+					connection.close();
+				} catch (SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+
+	}
+
+}

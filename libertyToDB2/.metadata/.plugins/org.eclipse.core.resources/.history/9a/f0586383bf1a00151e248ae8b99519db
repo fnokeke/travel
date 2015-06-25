@@ -1,0 +1,60 @@
+package com.ibm.arc.documentsecurity.bean;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+
+
+@DataSourceDefinition(
+        name         = "java:comp/env/jdbc/db2",
+        className    = "com.ibm.db2.jcc.DB2DataSource",
+        databaseName = "SAMPLEDB",
+        serverName   = "localhost",
+        portNumber   = 50000,
+        properties   = { "driverType=4" },
+        user         = "user1",
+        password     = "pwd1"
+        )
+
+/**
+ * Servlet implementation class DB2Connect
+ */
+@WebServlet("/DB2Connect")
+public class DB2Connect extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+
+    @Resource(lookup="java:comp/env/jdbc/db2")
+    DataSource ds;
+    Connection con = ds1.getConnection();
+    Statement stmt = null;
+     try {
+        stmt = con.createStatement();
+        // create a table
+        stmt.executeUpdate("create table cities (name varchar(50)" + 
+        "not null primary key, population int, county varchar(30))");
+        // insert a test record
+        stmt.executeUpdate("insert into cities values ('myHomeCity'," + 
+        "106769, 'myHomeCounty')");
+        // select a record
+        ResultSet result = stmt.executeQuery("select county from cities" + 
+        "where name='myHomeCity'");
+        result.next();
+        // display the county information for the city.
+        System.out.println("The county for myHomeCity is " + result.getString(1));
+     } 
+    catch (SQLException e) {
+    e.printStackTrace();
+     } 
+    finally {
+    try {
+      // drop the table to clean up and to be able to rerun the test.
+      stmt.executeUpdate("drop table cities");
+    } 
+    catch (SQLException e) {
+      e.printStackTrace();
+    }				
+    con.close();
+  }
+     
+}

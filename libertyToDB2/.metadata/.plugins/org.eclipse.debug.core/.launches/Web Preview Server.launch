@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.ibm.etools.wdt.server.launchConfigurationType">
+<stringAttribute key="org.eclipse.jdt.launching.JRE_CONTAINER" value="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre1.8.0_45"/>
+<stringAttribute key="org.eclipse.jdt.launching.WORKING_DIRECTORY" value="/home/fab/code/DB2-Workspace/.metadata/.plugins/com.ibm.etools.wdt.server.core/tmp0"/>
+<stringAttribute key="server-id" value="defaultServer0"/>
+</launchConfiguration>

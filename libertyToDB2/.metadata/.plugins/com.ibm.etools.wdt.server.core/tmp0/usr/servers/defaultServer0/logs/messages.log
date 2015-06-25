@@ -1,0 +1,123 @@
+********************************************************************************
+product = WebSphere Application Server 8.5.5.4 (wlp-1.0.7.cl50420141211-1039)
+wlp.install.dir = /home/fab/eclipse/configuration/org.eclipse.osgi/908/0/.cp/resources/server_runtime/
+server.config.dir = /home/fab/code/DB2-Workspace/.metadata/.plugins/com.ibm.etools.wdt.server.core/tmp0/usr/servers/defaultServer0/
+java.home = /opt/jre1.8.0_45
+java.version = 1.8.0_45
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_45-b14)
+os = Linux (3.10.0-229.4.2.el7.x86_64; amd64) (en_US)
+process = 19521@localhost.localdomain
+********************************************************************************
+[6/24/15 15:31:48:355 PDT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer0 has been launched.
+[6/24/15 15:31:50:403 PDT] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 2.485 seconds
+[6/24/15 15:31:50:461 PDT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[6/24/15 15:31:51:815 PDT] 0000000e com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[6/24/15 15:31:51:937 PDT] 00000018 com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host *  (IPv6) port 8080.
+[6/24/15 15:31:52:851 PDT] 0000001b com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application PhoneToWeb.
+[6/24/15 15:31:52:889 PDT] 00000018 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application proxy.
+[6/24/15 15:31:53:704 PDT] 00000018 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: Ajax Proxy for IBM WebSphere.
+[6/24/15 15:31:53:706 PDT] 00000018 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module Ajax Proxy for IBM WebSphere has been bound to default_host.
+[6/24/15 15:31:53:707 PDT] 00000018 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:8080/proxy/
+[6/24/15 15:31:53:711 PDT] 00000018 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application proxy started in 0.822 seconds.
+[6/24/15 15:31:53:718 PDT] 0000001b com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: DocumentSecurityService.
+[6/24/15 15:31:53:719 PDT] 0000001b com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module DocumentSecurityService has been bound to default_host.
+[6/24/15 15:31:53:719 PDT] 0000001b com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:8080/PhoneToWeb/
+[6/24/15 15:31:53:720 PDT] 0000001b com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application PhoneToWeb started in 0.869 seconds.
+[6/24/15 15:31:53:728 PDT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [servlet-3.0, jsp-2.2, json-1.0, localConnector-1.0, jaxrs-1.1].
+[6/24/15 15:31:53:729 PDT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 3.347 seconds.
+[6/24/15 15:31:53:729 PDT] 00000016 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer0 is ready to run a smarter planet.
+[6/24/15 15:31:54:612 PDT] 00000020 com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[6/24/15 15:31:54:614 PDT] 00000020 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/PhoneToWeb
+[6/24/15 15:31:54:655 PDT] 00000020 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/24/15 15:31:54:951 PDT] 00000020 org.apache.wink.server.internal.servlet.RestServlet          I The system is using the /WEB-INF/resources JAX-RS application class named in the applicationConfigLocation init-param initialization parameter.
+[6/24/15 15:31:55:047 PDT] 00000020 apache.wink.server.internal.application.ApplicationProcessor I The following JAX-RS application has been processed: org.apache.wink.server.internal.application.ServletWinkApplication
+[6/24/15 15:31:55:049 PDT] 00000020 org.apache.wink.server.internal.log.Resources                I The server has registered the JAX-RS resource class com.ibm.arc.documentsecurity.resources.DataBeanService with @Path(/dataservice).
+[6/24/15 15:31:55:050 PDT] 00000020 org.apache.wink.server.internal.log.Providers                I There are no custom JAX-RS providers defined in the application.
+[6/24/15 15:31:55:842 PDT] 00000020 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [PhoneToWeb] [/PhoneToWeb] [JAX-RS Servlet]: Initialization successful.
+[6/24/15 15:34:47:467 PDT] 00000016 com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /dataservice/
+[6/24/15 15:34:58:569 PDT] 00000020 com.ibm.ws.webcontainer.extension                            W SRVE0190E: File not found: /dataservice/fabio/100
+[6/24/15 15:35:04:338 PDT] 0000001c SystemOut                                                    O Data 1 = fabio  and  Data2 = 100.0
+[6/24/15 15:35:04:341 PDT] 0000001c SystemErr                                                    R java.lang.ClassNotFoundException: com.ibm.db2.jcc.DB2Driver
+[6/24/15 15:35:04:341 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.classloading.internal.AppClassLoader.findClassCommonLibraryClassLoaders(AppClassLoader.java:395)
+[6/24/15 15:35:04:389 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.classloading.internal.AppClassLoader.findClass(AppClassLoader.java:254)
+[6/24/15 15:35:04:389 PDT] 0000001c SystemErr                                                    R 	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+[6/24/15 15:35:04:389 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.classloading.internal.AppClassLoader.loadClass(AppClassLoader.java:370)
+[6/24/15 15:35:04:389 PDT] 0000001c SystemErr                                                    R 	at java.lang.Class.forName0(Native Method)
+[6/24/15 15:35:04:389 PDT] 0000001c SystemErr                                                    R 	at java.lang.Class.forName(Class.java:264)
+[6/24/15 15:35:04:390 PDT] 0000001c SystemErr                                                    R 	at com.ibm.arc.documentsecurity.resources.DataBeanService.getDataEcho(DataBeanService.java:48)
+[6/24/15 15:35:04:390 PDT] 0000001c SystemErr                                                    R 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[6/24/15 15:35:04:390 PDT] 0000001c SystemErr                                                    R 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[6/24/15 15:35:04:390 PDT] 0000001c SystemErr                                                    R 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[6/24/15 15:35:04:390 PDT] 0000001c SystemErr                                                    R 	at java.lang.reflect.Method.invoke(Method.java:497)
+[6/24/15 15:35:04:391 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.InvokeMethodHandler.handleRequest(InvokeMethodHandler.java:63)
+[6/24/15 15:35:04:391 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandler.handleRequest(AbstractHandler.java:33)
+[6/24/15 15:35:04:391 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:391 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:392 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:392 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.CreateInvocationParametersHandler.handleRequest(CreateInvocationParametersHandler.java:54)
+[6/24/15 15:35:04:393 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:393 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:393 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:393 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.FindResourceMethodHandler.handleSubResourceMethod(FindResourceMethodHandler.java:188)
+[6/24/15 15:35:04:393 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.FindResourceMethodHandler.handleRequest(FindResourceMethodHandler.java:110)
+[6/24/15 15:35:04:394 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:394 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:394 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:394 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.FindRootResourceHandler.handleRequest(FindRootResourceHandler.java:95)
+[6/24/15 15:35:04:394 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:395 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:395 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:395 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.HeadMethodHandler.handleRequest(HeadMethodHandler.java:53)
+[6/24/15 15:35:04:395 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:395 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:396 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:396 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.OptionsMethodWADLHandler.handleRequest(OptionsMethodWADLHandler.java:51)
+[6/24/15 15:35:04:396 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:396 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:396 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:396 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.handlers.SearchResultHandler.handleRequest(SearchResultHandler.java:33)
+[6/24/15 15:35:04:397 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:420 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:420 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:421 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.log.ResourceInvocation.handleRequest(ResourceInvocation.java:92)
+[6/24/15 15:35:04:421 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:421 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:421 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:421 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.log.Requests.handleRequest(Requests.java:76)
+[6/24/15 15:35:04:422 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:26)
+[6/24/15 15:35:04:422 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.RequestHandlersChain.handle(RequestHandlersChain.java:22)
+[6/24/15 15:35:04:422 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.doChain(AbstractHandlersChain.java:75)
+[6/24/15 15:35:04:422 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.handlers.AbstractHandlersChain.run(AbstractHandlersChain.java:60)
+[6/24/15 15:35:04:422 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.RequestProcessor.handleRequestWithoutFaultBarrier(RequestProcessor.java:207)
+[6/24/15 15:35:04:422 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.RequestProcessor.handleRequest(RequestProcessor.java:154)
+[6/24/15 15:35:04:423 PDT] 0000001c SystemErr                                                    R 	at org.apache.wink.server.internal.servlet.RestServlet.service(RestServlet.java:124)
+[6/24/15 15:35:04:423 PDT] 0000001c SystemErr                                                    R 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+[6/24/15 15:35:04:423 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.service(ServletWrapper.java:1275)
+[6/24/15 15:35:04:423 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:766)
+[6/24/15 15:35:04:423 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.servlet.ServletWrapper.handleRequest(ServletWrapper.java:472)
+[6/24/15 15:35:04:423 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters(WebAppFilterManager.java:1101)
+[6/24/15 15:35:04:424 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.webapp.WebApp.handleRequest(WebApp.java:4797)
+[6/24/15 15:35:04:424 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.handleRequest(DynamicVirtualHost.java:297)
+[6/24/15 15:35:04:424 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.WebContainer.handleRequest(WebContainer.java:981)
+[6/24/15 15:35:04:424 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.webcontainer.osgi.DynamicVirtualHost$2.run(DynamicVirtualHost.java:262)
+[6/24/15 15:35:04:424 PDT] 0000001c SystemErr                                                    R 	at com.ibm.ws.http.dispatcher.internal.channel.HttpDispatcherLink$TaskWrapper.run(HttpDispatcherLink.java:938)
+[6/24/15 15:35:04:425 PDT] 0000001c SystemErr                                                    R 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+[6/24/15 15:35:04:425 PDT] 0000001c SystemErr                                                    R 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+[6/24/15 15:35:04:426 PDT] 0000001c SystemErr                                                    R 	at java.lang.Thread.run(Thread.java:745)
+[6/24/15 15:36:00:508 PDT] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:8080/PhoneToWeb/
+[6/24/15 15:36:00:522 PDT] 00000026 com.ibm.ws.webcontainer.servlet                              I SRVE0253I: [PhoneToWeb] [/PhoneToWeb] [JAX-RS Servlet]: Destroy successful.
+[6/24/15 15:36:00:530 PDT] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0009I: The application PhoneToWeb has stopped successfully.
+[6/24/15 15:36:00:534 PDT] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application PhoneToWeb.
+[6/24/15 15:36:00:591 PDT] 00000026 com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: DocumentSecurityService.
+[6/24/15 15:36:00:591 PDT] 00000026 com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module DocumentSecurityService has been bound to default_host.
+[6/24/15 15:36:00:591 PDT] 00000026 com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:8080/PhoneToWeb/
+[6/24/15 15:36:00:592 PDT] 00000026 com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0003I: The application PhoneToWeb updated in 0.058 seconds.
+[6/24/15 15:36:08:773 PDT] 00000027 com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/PhoneToWeb
+[6/24/15 15:36:08:773 PDT] 00000027 com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[6/24/15 15:36:08:818 PDT] 00000027 org.apache.wink.server.internal.servlet.RestServlet          I The system is using the /WEB-INF/resources JAX-RS application class named in the applicationConfigLocation init-param initialization parameter.
+[6/24/15 15:36:08:821 PDT] 00000027 apache.wink.server.internal.application.ApplicationProcessor I The following JAX-RS application has been processed: org.apache.wink.server.internal.application.ServletWinkApplication
+[6/24/15 15:36:08:821 PDT] 00000027 org.apache.wink.server.internal.log.Resources                I The server has registered the JAX-RS resource class com.ibm.arc.documentsecurity.resources.DataBeanService with @Path(/dataservice).
+[6/24/15 15:36:08:821 PDT] 00000027 org.apache.wink.server.internal.log.Providers                I There are no custom JAX-RS providers defined in the application.
+[6/24/15 15:36:08:899 PDT] 00000027 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [PhoneToWeb] [/PhoneToWeb] [JAX-RS Servlet]: Initialization successful.
+[6/24/15 15:36:08:900 PDT] 00000027 SystemOut                                                    O Data 1 = fabio  and  Data2 = 500.0
+[6/24/15 16:47:49:622 PDT] 00000020 SystemOut                                                    O Data 1 = fabio  and  Data2 = 500.0

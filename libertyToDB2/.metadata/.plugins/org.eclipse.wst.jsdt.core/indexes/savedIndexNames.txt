@@ -1,0 +1,5 @@
+INDEX VERSION 1.3+/home/fab/host/libertyToDB2/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1574838205.index
+3732369255.index
+4232500820.index
+84473814.index
