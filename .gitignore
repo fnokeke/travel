@@ -1,8 +1,18 @@
 .DS_Store
+
+# random files
 fitLcTableSample.txt
 old_data_extractor.py
+
+# python compile
 *.pyc
 
+# raw data
 csv/
 xl/
+
+# eclipse project files
 .metadata/
+RemoteSystemsTempFiles/
+server-profile/
+
