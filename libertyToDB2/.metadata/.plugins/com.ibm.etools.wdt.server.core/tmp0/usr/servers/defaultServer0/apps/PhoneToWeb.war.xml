@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<archive id="defaultServer0">
-  <dir sourceOnDisk="/home/fab/code/DB2-Workspace/PhoneToWeb/WebContent" targetInArchive="/"/>
-  <dir sourceOnDisk="/home/fab/code/DB2-Workspace/PhoneToWeb/WebContent/WEB-INF/classes" targetInArchive="/WEB-INF/classes"/>
-</archive>
