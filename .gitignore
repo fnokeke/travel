@@ -16,3 +16,5 @@ xl/
 RemoteSystemsTempFiles/
 server-profile/
 
+# java
+.class
