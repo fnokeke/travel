@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5A8D084D-6A1D-458F-A957-27641BB29952</string>
+	<key>IDESourceControlProjectName</key>
+	<string>etravel</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D34E60AAD5FE0AD94FEBA2D5E1AB30053CDE0FB8</key>
+		<string>github.com:fnokeke/travel.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/etravel/etravel.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D34E60AAD5FE0AD94FEBA2D5E1AB30053CDE0FB8</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:fnokeke/travel.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D34E60AAD5FE0AD94FEBA2D5E1AB30053CDE0FB8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D34E60AAD5FE0AD94FEBA2D5E1AB30053CDE0FB8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>share</string>
+		</dict>
+	</array>
+</dict>
+</plist>
