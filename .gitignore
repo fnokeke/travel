@@ -15,6 +15,17 @@ xl/
 .metadata/
 RemoteSystemsTempFiles/
 server-profile/
+testing123/
 
 # java
 .class
+.project
+.classpath
+.factorypath
+.settings/
+.jsdtscope
+.Trash-1000/
+bin/
+testing123/
+WebSphere PhoneToWeb Server Liberty Profile/
+classes/

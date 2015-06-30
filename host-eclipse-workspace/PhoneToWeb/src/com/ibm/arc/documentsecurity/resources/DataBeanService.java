@@ -9,11 +9,31 @@ import javax.ws.rs.core.Response;
 
 import com.ibm.arc.documentsecurity.bean.DataBean;
 import com.ibm.arc.documentsecurity.bean.DataEmbedMe;
+import com.ibm.json.java.JSONObject;
 
 //import com.ibm.arc.documentsecurity.bean.DataEmbedMe;
 
-@javax.ws.rs.Path("/dataservice")
+@javax.ws.rs.Path("/request")
 public class DataBeanService {
+	
+	// query
+	@GET
+	@Produces("application/json")
+	@Path("/{type_String}/{query_String}")
+	public JSONObject getDataEcho(
+			@PathParam(value = "type_String") String type,
+			@PathParam(value = "query_String") String query) {
+
+		System.out.println("Received:\ntype = " + type  + "\nquery = " + query);
+
+		DataBean db = new DataBean();
+		db.setQuery(query);
+
+		JSONObject js = new JSONObject();
+		js.put(type, db.getQuery());
+		
+		return js;
+	}
 
 	//
 	// username, passwd, dbname
@@ -30,9 +50,7 @@ public class DataBeanService {
 				+ passwd + "\ndbname = " + dbname);
 
 		DataBean db = new DataBean();
-		db.setUsername(username);
-		db.setPasswd(passwd);
-		db.setDB(dbname);
+		db.setValues(username, passwd, dbname);
 
 		// add dictionary
 		DataEmbedMe data = new DataEmbedMe();
@@ -47,9 +65,9 @@ public class DataBeanService {
 	@Path("{id : \\d+}")
 	// support digit only
 	public Response getUserById(@PathParam("id") String id) {
-		return Response.status(200).entity("getUserById is called, id : " + id)
+		return Response.status(200).entity("id:" + id)
 				.build();
-
+	
 	}
 
 	@GET

@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        var query: String = "INSERT INTO table employee VALUES ('ooboi', 'ackerman', 15, 220930)"
+        var query: String = "INSERT INTO table employee VALUES ('ooboi', 'ackermamaoe', 15, 2209300000)"
         query = query.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
         var jsonRequest: String = "http://192.168.56.101:9080/PhoneToWeb/api/request/query/" + query
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
             {
                 // got an error in getting the data, need to handle it
                 println("error calling GET webserver query")
-                println(error.localizedDescription)
+                //println(error.localizedDescription)
             }
             else // no error returned by URL request
             {
