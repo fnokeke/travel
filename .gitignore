@@ -29,3 +29,7 @@ bin/
 testing123/
 WebSphere PhoneToWeb Server Liberty Profile/
 classes/
+
+# iOS
+etravel.xcodeproj/
+

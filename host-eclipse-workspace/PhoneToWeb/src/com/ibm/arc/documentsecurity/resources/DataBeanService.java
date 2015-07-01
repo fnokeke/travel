@@ -28,11 +28,8 @@ public class DataBeanService {
 
 		DataBean db = new DataBean();
 		db.setQuery(query);
-
-		JSONObject js = new JSONObject();
-		js.put(type, db.getQuery());
 		
-		return js;
+		return db.getQuery();
 	}
 
 	//

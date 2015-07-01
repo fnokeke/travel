@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        var query: String = "INSERT INTO table employee VALUES ('ooboi', 'ackermamaoe', 15, 2209300000)"
+        var query: String = "SELECT * from PROFILE.employee LIMIT 6"
         query = query.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
         var jsonRequest: String = "http://192.168.56.101:9080/PhoneToWeb/api/request/query/" + query
