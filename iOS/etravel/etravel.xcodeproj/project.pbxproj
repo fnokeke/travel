@@ -13,6 +13,7 @@
 		CC34E8FE1B41C19400952284 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC34E8FD1B41C19400952284 /* Images.xcassets */; };
 		CC34E9011B41C19400952284 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC34E8FF1B41C19400952284 /* LaunchScreen.xib */; };
 		CC34E90D1B41C19500952284 /* etravelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC34E90C1B41C19500952284 /* etravelTests.swift */; };
+		CC55E5CF1B45C59800FC676F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55E5CE1B45C59800FC676F /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		CC34E9061B41C19500952284 /* etravelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = etravelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC34E90B1B41C19500952284 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC34E90C1B41C19500952284 /* etravelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = etravelTests.swift; sourceTree = "<group>"; };
+		CC55E5CE1B45C59800FC676F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				CC34E8F61B41C19400952284 /* AppDelegate.swift */,
 				CC34E8F81B41C19400952284 /* ViewController.swift */,
+				CC55E5CE1B45C59800FC676F /* ProfileViewController.swift */,
 				CC34E8FA1B41C19400952284 /* Main.storyboard */,
 				CC34E8FD1B41C19400952284 /* Images.xcassets */,
 				CC34E8FF1B41C19400952284 /* LaunchScreen.xib */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC55E5CF1B45C59800FC676F /* ProfileViewController.swift in Sources */,
 				CC34E8F91B41C19400952284 /* ViewController.swift in Sources */,
 				CC34E8F71B41C19400952284 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +413,7 @@
 				CC34E9121B41C19500952284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CC34E9131B41C19500952284 /* Build configuration list for PBXNativeTarget "etravelTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				CC34E9151B41C19500952284 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
