@@ -1,0 +1,1 @@
+select a.emailid as email from ITIMAM.hr_events a where a.hr_event='Termination'	

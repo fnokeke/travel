@@ -1,0 +1,1 @@
+select max(coalesce(b.mail,'')) as email, a.departmentnumber as department from itimuser.person c, itimuser.person_mail b, itimuser.person_departmentnumber a where a.dn=c.dn and c.supervisor=b.dn group by a.departmentnumber

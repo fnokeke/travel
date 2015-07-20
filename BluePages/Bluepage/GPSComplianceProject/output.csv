@@ -1,0 +1,183 @@
+cnum, full name, emailID, dept, div, isManager, MgrSerialNum, JobRole, SkillSet
+810928818,"Camasis, Pedro Divino",9camaspa@ph.ibm.com,ZTX,02,N,809587818,,
+809654818,"Lazarte, Jeffrey",9lazarjc@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810946818,"Ocampo, Rachelle Liz",9ocamprs@ph.ibm.com,ZTX,02,N,809831818,,
+809196818,"Arguelles, Ma. Lourdes",9arguem1@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809827818,"Panganiban, Florencia",9pangafb@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809863818,"Racho, Mariel",9rachomp@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809688818,"Lunasco, Lancelot",9lunasls@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809243818,"Batolina, Jennilyn",9batoljs@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809910818,"Sabaot, Mark Zenos",9sabaomp@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+809771818,"Morales, Nestor",9moralna@ph.ibm.com,ZTX,02,N,809831818,Deal Facilitator,General
+809434818,"De La Cruz, Zsa Zsa Aura",9delazg@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+809259818,"Benesa, Janice",9benesjm@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809133818,"Abanales, Heather Jo",9abanahg@ph.ibm.com,ZTB,02,Y,809312818,Deal Facilitator,General
+809926818,"Sanchez, Iluminada",9sanchin@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809625818,"Janoras, Josefa Cristina",9janorjm@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809980818,"Tagala, Maria Teresa",9tagalmo@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809149818,"Aguilar, Gregory William",9aguilgl@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809978818,"Tabion, Indra",9tabioia@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809659818,"Li, Kristoffer",9likm@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+810032818,"Vicente, Carlo Patrick",9vicencd@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809868818,"Ramirez, Divina Kristina",9ramirdr@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809706818,"Manabat, Sedfrey",9manabsd@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+810542818,"Buen, Rey-Arthur",9buenrc@ph.ibm.com,ZTX,02,N,809587818,,
+810048818,"Villarias, Dorothy Dee",9villade@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809614818,"Idjao, Niermie Lyn",9idjaonc@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809475818,"Dranciang, Genesis",9drancgg@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809331818,"Carandang, Maria De La Cinta",9caranmt@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+810623818,"Plan, Almerson",9plana@ph.ibm.com,ZTX,02,N,809587818,,
+807093818,"Solisa, Bernard",solisabe@wm.ibm.com,1IP,M8,N,809910818,,
+809556818,"Gallos, Veronica Elise",9gallovd@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809430818,"De Jesus, John Michael",9dejejd@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809904818,"Romero, Jermaine",9romerjr@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+810740818,"Quiroz, Isaiah Tomas",isaiah.quiroz04@ph.ibm.com,ZTX,02,N,809348818,,
+809291818,"Buenio, Paula Bianca",9buenipq@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809428818,"De Guzman, Samuel",9degusf@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810738818,"Flores, Joseph James",9florejb@ph.ibm.com,ZTX,02,N,809348818,,
+810947818,"Mamalio, Christine Dorothy",9mamalcl@ph.ibm.com,ZTX,02,N,809434818,,
+810628818,"Yulip, Michelle Catherine",9yulipmd@ph.ibm.com,ZTX,02,N,809587818,,
+809372818,"Chua, John Kirby",9chuajc@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809210818,"Bacosa, Guilmer Giancarlo",9bacosgb@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809702818,"Malto, Mark Lester",9maltoms@ph.ibm.com,ZTB,02,N,809910818,Business Analyst,General
+810008818,"Torralba, Sheryll Lynn",9torrasa@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809388818,"Crisostomo, Raul",9crisora@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809417818,"David, Lorenzo",9davidlu@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809134818,"Abarico, Roger",9abarirg@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809152818,"Aguilar, Sheilah Marie Fe",9aguilsa@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809963818,"Sobrevinas, Froilan",9sobrefs@ph.ibm.com,ZTB,02,N,809942818,Deal Specialist,General
+811271818,"Ong, Alvin",9ongag@ph.ibm.com,ZTB,02,N,809348818,,
+809788818,"Noguera, Jennifer",9noguej1@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809644818,"Lantion, Jennifer Lynn",9lantijm@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+810954818,"Lazarte, Jelina",9lazarju@ph.ibm.com,ZTX,02,N,809831818,,
+809325818,"Canillas, Janet",9canilja@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809361818,"Chang, Jevy Wendel",9changjl@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809516818,"Estacio, Maria Arbe",9estacmb@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809725818,"Marallag, Mariel Abigail",9maralme@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809267818,"Bernardo, Bernadeth",9bernabc@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809285818,"Bruto, Bryan",9brutobc@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809777818,"Naanep, Vida Anna",9naaneve@ph.ibm.com,ZTB,02,N,809312818,Business Programs Manager,General
+809458818,"Dela Torre, Rochell",9delara@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810624818,"Isidro, Katrina",9isidrks@ph.ibm.com,ZTX,02,N,809831818,,
+809175818,"Anda, John John",9andajm@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809348818,"Cataquiz, Kenneth Irvin",9cataqkm@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+809366818,"Cheng, Neil",9chengna@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+810040818,"Villanueva, Catherine Rose",9villacr@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809222818,"Balino, John Francis",9balinjv@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+810741818,"Salvania, May Nanette",9salvamf@ph.ibm.com,ZTX,02,N,809910818,,
+809292818,"Buensuceso, Maria Pia",9buensmv@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809130818,"Eufemio, Apple",9eufemar@ph.ibm.com,ZTX,02,N,809793818,Deal Facilitator,General
+809640818,"Laguador, Irecyn",9laguaic@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+810739818,"De Guzman, Karen Claire",9deguka@ph.ibm.com,ZTX,02,N,809348818,,
+809831818,"Pantujan, Erwin Jay",9pantuea@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+810948818,"Maik, April Rose",9maikai@ph.ibm.com,ZTX,02,N,809348818,,
+809337818,"Caruncho, Rodrigo",9carunrd@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809373818,"Ciocon, Omega",9ciocooo@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809211818,"Bacsa, Ferdinand",9bacsafa@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809391818,"Cruz, Gladerica",9cruzgb@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809883818,"Revilla, Frank Benedict",9revilfm@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809564818,"Garcia, Ericka Lyka",9garcieb@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809719818,"Manongsong, Francisco",9manonft@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809611818,"Hollero, Frenz Rhainier",9hollefm@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809490818,"Enriquez, Janine Lou",9enriqjt@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+810620818,"Reyes, Michelle",9reyesmr@ph.ibm.com,ZTX,02,N,809831818,,
+811272818,"Radaza, Angelyn",9radazal@ph.ibm.com,ZTB,02,N,809831818,,
+809627818,"Jardio, Fritzie",9jardifr@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809501818,"Esguerra, Eizel Grace",9esgueep@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809681818,"Lorico, Reginald James",9loricrb@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810000818,"Tolentino, Eric",9tolenel@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809362818,"Chang, John Rick",9changjp@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809187818,"Arandela, Leslie Ann",9arandlb@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809380818,"Constantino, Adrian",9constai@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809535818,"Flaviano, Francis Albert",9flavifa@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809216818,"Baggay, Grace",9baggagd@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+810052818,"Vinas, Mark",9vinasm@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809587818,"Gonzales, Graceshiela",9gonzagc@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+809634818,"Kabahar, Alexander Guiseppe",9kabahaf@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+810625818,"Menodiado, Crosby",9menodcf@ph.ibm.com,ZTX,02,N,809910818,,
+809807818,"Oposa, Myla",9oposamc@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809843818,"Peralta, Maria Christine",9peralmp@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809560818,"Ganzon, Lucky Gay",9ganzolg@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809715818,"Manguiat, Rosemarie",9mangurb@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809558818,"Gamo, Rachelle",9gamorl@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809432818,"De Jesus, Sony Michael",9dejesl@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809257818,"Benamer, Emilie Danica",9benameg@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810742818,"Lamsen, Romeo",9lamserm@ph.ibm.com,ZTX,02,N,809910818,,
+809942818,"Segarra, Julie Cris",9segarjt@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+810951818,"Pineda, Ma. Elena",9pinedma@ph.ibm.com,ZTX,02,N,809434818,,
+809129818,"Pastoril, Jay",9pastojs@ph.ibm.com,ZTX,02,N,809793818,Deal Facilitator,General
+809976818,"Sy, Krystle Mae",9sykb@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809693818,"Macavinta, Denise Jose",9macavdn@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810012818,"Trias, Angelo Miguel",9triasad@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809866818,"Ramento, Ruben",ruben.ramentojr@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810540818,"Betsayda, Fernando",9betsafs@ph.ibm.com,ZTX,02,N,809434818,,
+809884818,"Reyes, Ediric",9reyeset@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809529818,"Fernandez, Odysseus Karla",9fernaoj@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809547818,"Fronda, Jim",9frondjp@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809228818,"Bangayan, Anne Katherine",9bangaac@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809738818,"Martinez, Floribelle",9martiff@ph.ibm.com,ZTB,02,N,809312818,Deal Facilitator,General
+809599818,"Guevarra, Hazel Faye",9guevahr@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+803061818,"Lolin, Kristine",kristine.lolin@ph.ibm.com,ZTX,02,N,809793818,HR Delivery Process Owner,General
+810747818,"Calces, Erwin Ma.",erwincalces@ph.ibm.com,ZTX,02,N,809910818,,
+809190818,"Arcangel, Rielle",9arcanrf@ph.ibm.com,ZTB,02,N,809312818,Deal Facilitator,General
+809520818,"Estrella, Yema Mari",9estreye@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809489818,"Enriquez, Cartier Dissa",9enriqcn@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809363818,"Chao-Angan, Desiree Diane",dchaoangan@ph.ibm.com,ZTB,02,N,809312818,Supply Chain Operations Professional,General
+809201818,"Astudillo, Eissel",9astudem@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809999818,"Tiu, Michael Quim",9tiumc@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+810017818,"Tuba, Rossythel",9tubard@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809554818,"Gali, Jayson",9galijc@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809572818,"Gatan, Rachel",9gatanrc@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809217818,"Bagtas, John Benedict",9bagtajb@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+810053818,"Vindollo, Joseph",9vindojc@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809902818,"Rogacion, Kathrina Lee",9rogacka@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809271818,"Betila, Michael Ciro",9betilmn@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+810736818,"Escal, Aerina Necci",9escalas@ph.ibm.com,ZTX,02,N,809348818,,
+809810818,"Ortiz, Hannah Raissa",9ortizhp@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+810927818,"Cascante, Oliver",9cascaof@ph.ibm.com,ZTX,02,N,809312818,,
+809653818,"Lazarte, Christian George",9lazarcs@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809671818,"Lobo, Rommel",9loborb@ph.ibm.com,ZTB,02,N,809587818,Deal Facilitator,General
+809478818,"Dumayas, Michael Benedict",9dumaymt@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809352818,"Celi, Jayzon",9celijd@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809988818,"Tapdasan, Lindy Leonor",9tapdalv@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809669818,"Llona, Robin",9llonarm@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809687818,"Luis, Anna Loubelle",9luisan@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
+809206818,"Austria, Joel",9austrjv@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809368818,"Chico, Alvin",9chicoaf@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+810871818,"Martinez, Michael",9martimf@ph.ibm.com,ZTX,02,N,809348818,,
+809878818,"Rempillo, Marvin",9rempimr@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809752818,"Mendoza, Angeline Faye",9mendoan@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809415818,"Dasigan, Voltaire",9dasigvo@ph.ibm.com,ZTB,02,N,809348818,Deal Facilitator,General
+809433818,"De Jesus, Arnulfo",arnulfo.dejesus@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810743818,"De Leon, Joanne",9deleja@ph.ibm.com,ZTX,02,N,809910818,,
+809132818,"Abalon, Martin Alvin",martin.abalon@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809294818,"Bulaclac, Rhea Anna",9bulacrl@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809150818,"Aguilar, Johanna Marie Christine",9aguiljq@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809943818,"Segundino, Jenny Lyn",9segunja@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809768818,"Moises, Joseph",peter.joseph@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809961818,"Simon, Arby",9simonac@ph.ibm.com,ZTB,02,N,809312818,Business Programs Manager,General
+809660818,"Liao, Dan Joseph Aries",9liaoda@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810795818,"Faune, Roweda",9faunerg@ph.ibm.com,ZTX,02,N,809434818,,
+810013818,"Trinidad, Chris Austin",9trinict@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809550818,"Gabon, Mark Erikson",mark.gabon@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810541818,"Moreno, Paul Brian",Brian.Moreno@ph.ibm.com,ZTX,02,N,809910818,,
+809566818,"Garcia, Lilia Chromita Belarmina",9garcilc@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809422818,"De Belen, Eddie",9debees@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809631818,"Joven, Jeana",9jovenjs@ph.ibm.com,ZTB,02,N,809312818,Deal Facilitator,General
+809793818,"Odron, Jason",9odronje@ph.ibm.com,ZTB,02,Y,809312818,People Manager,General
+809474818,"Dominguez, Irene Ray",9dominia@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+810748818,"Garcia, Jonalyn",9garcijl@ph.ibm.com,ZTX,02,N,809910818,,
+809312818,"Calica, Ma. Emilie Milagros Concepcion",9calicmr@ph.ibm.com,ZTB,02,Y,519076818,People Manager,General
+809948818,"Seraspi, Jerome Amadeus",9serasjc@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+810622818,"De La Cruz, Daniel Matthew",9deladp@ph.ibm.com,ZTX,02,N,809831818,,
+811274818,"Urasoko, Corina",9urasocg@ph.ibm.com,ZTX,02,N,809587818,,
+809521818,"Evangelista, Janice",9evangjb@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809683818,"Lu, Lailani",9lulb@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809189818,"Arboleda, Froilan Victor",9arbolfs@ph.ibm.com,ZTB,02,N,809942818,Deal Facilitator,General
+809519818,"Estera, Jowell Zoilo",9esterjd@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809537818,"Florendo, John Louie",9florejn@ph.ibm.com,ZTB,02,N,809434818,Deal Facilitator,General
+809699818,"Maglaqui, Marisan Darlyn",9maglam1@ph.ibm.com,ZTB,02,N,809133818,Deal Facilitator,General
+809602818,"Guinto, Marco",9guintms@ph.ibm.com,ZTB,02,N,809831818,Deal Facilitator,General
+809463818,"Denosta, Nicklaus",9denosnb@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809481818,"Ebio, Nelson",9ebiona@ph.ibm.com,ZTB,02,N,809910818,Deal Facilitator,General
+809919818,"Saluta, Gonzalo",9salutgo@ph.ibm.com,ZTB,02,N,809793818,Deal Facilitator,General
