@@ -47,3 +47,37 @@ Client app running on iOS emulator and making RESTful calls.
 
 # Errors
 - In DB2, a null value is not the same as zero or all blanks. 
+
+# Travel API
+### Token
+- You need to get an Access Token
+
+### URI Resources
+Every URI is preceded by v1/
+```
+profiles/
+profiles/profileId/{profileId}
+
+profiles/profileId/{profileId}/names   					
+profiles/profileId/{profileId}/names/firstname  
+profiles/profileId/{profileId}/names/middlename 
+profiles/profileId/{profileId}/names/lastname   
+
+profiles/profileId/{profileId}/dateofbirth
+
+profiles/profileId/{profileId}/gender
+
+profiles/profileId/{profileId}/emails/primary 	
+profiles/profileId/{profileId}/emails/other 		
+
+profiles/profileId/{profileId}/addresses/work 	
+profiles/profileId/{profileId}/addresses/home 	
+
+profiles/profileId/{profileId}/phones/work 			
+profiles/profileId/{profileId}/phones/home 			
+
+profiles/profileId/{profileId}/loyalties
+profiles/profileId/{profileId}/loyalties/loyaltyType/{loyaltyType} 
+
+loyalties/loyaltyId/{loyaltyId}/details (get details of a traveler based on their travelerId
+```

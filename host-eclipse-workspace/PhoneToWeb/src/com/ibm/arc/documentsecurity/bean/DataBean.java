@@ -2,7 +2,7 @@ package com.ibm.arc.documentsecurity.bean;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.ibm.arc.documentsecurity.db2.ConnectDB;
+import com.ibm.arc.documentsecurity.db2.QueryDB;
 import com.ibm.json.java.JSONObject;
 
 @XmlRootElement
@@ -56,7 +56,7 @@ public class DataBean {
 	public JSONObject getQuery() {
 		JSONObject result = null;
 		try {
-			ConnectDB handler = new ConnectDB();
+			QueryDB handler = new QueryDB();
 			result = handler.run_query(this.query);
 			handler.close();
 		} catch (Exception e) {

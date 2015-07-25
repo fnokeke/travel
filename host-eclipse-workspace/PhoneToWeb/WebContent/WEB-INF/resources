@@ -1,1 +1,4 @@
+com.ibm.arc.documentsecurity.resources.Airlines
 com.ibm.arc.documentsecurity.resources.DataBeanService
+com.ibm.arc.documentsecurity.resources.Hotels
+com.ibm.arc.documentsecurity.resources.Profiles

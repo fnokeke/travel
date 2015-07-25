@@ -51,7 +51,7 @@ class ProfileViewController: UIViewController {
         println("The query is: " + query)
         query = query.stringByReplacingOccurrencesOfString(" ", withString: "%20")
         
-        var jsonRequest: String = "http://192.168.56.101:9080/PhoneToWeb/api/request/query/" + query
+        var jsonRequest: String = "http://192.168.56.101:9080/PhoneToWeb/v1/request/query/" + query
         var urlRequest = NSURLRequest(URL: NSURL(string: jsonRequest)!)
         
         //call

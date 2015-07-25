@@ -3,6 +3,7 @@
 # random files
 fitLcTableSample.txt
 old_data_extractor.py
+swagger4javaee/
 
 # python compile
 *.pyc
@@ -32,4 +33,6 @@ classes/
 
 # iOS
 etravel.xcodeproj/
+
+
 
